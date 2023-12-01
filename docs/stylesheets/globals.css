@@ -129,13 +129,17 @@ label.md-nav__title, {
   font-size: 12px !important;
 }
 
+/* side navbar */
+.md-nav--secondary .md-nav__link span {
+  font-size: 12px !important;
+}
+
 /* Change Font Family of Input Placeholder */
 input::placeholder {
   font-family: 'Inter', sans-serif; /* Replace 'Your Chosen Font' with the desired font name */
 }
 
 /* Change nav title */
-
 .md-nav__title {
   font-weight: var(--font-medium) !important;
   color: var(--gray-700) !important;

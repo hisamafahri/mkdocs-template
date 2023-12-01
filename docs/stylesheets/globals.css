@@ -36,6 +36,10 @@ h2 {
   font-size: 18px !important;
 }
 
+.md-main__inner {
+  margin-top: 16px !important;
+}
+
 /* code */ 
 code {
   font-size: 12px !important;

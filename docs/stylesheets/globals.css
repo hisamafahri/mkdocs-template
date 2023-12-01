@@ -1,0 +1,152 @@
+:root {
+  /* Custom Colors */
+  --gray-900: #111827;
+  --gray-800: #1f2937;
+  --gray-700: #374151;
+
+  --sky-700: #0369A1;
+  --sky-600: #0284C7;
+  --sky-500: #0EA5E9;
+  --sky-200: #BAE6FD;
+
+  /* Font weight */
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+
+
+}
+
+/* Themes */
+:root > * {
+  --md-code-bg-color: #F4F7FC;
+}
+
+li, p, a {
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 24px !important;
+  font-weight: var(--font-semibold) !important;
+  color: var(--gray-900) !important;
+}
+
+h2 {
+  font-size: 18px !important;
+}
+
+/* code */ 
+code {
+  font-size: 12px !important;
+}
+
+.filename {
+  padding-left: 12px !important;
+  padding-right: 12px !important;
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
+  font-size: 11px !important;
+  font-weight: var(--font-normal) !important;
+  color: var(--gray-700) !important;
+  background-color: #EAF0F9 !important;
+}
+
+/* Dialog */
+.md-dialog__inner {
+  font-size: 12px !important;
+}
+
+/* Logo */
+.md-logo {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.md-nav__title a {
+  color: white !important;
+}
+
+label.md-nav__title, {
+  color: white !important;
+  background-color: black !important;
+}
+
+/* Title */
+.md-header__title span {
+  font-size: 14px !important;
+}
+
+/* Search */
+.md-search__form {
+  height: 28px !important;
+}
+
+.md-search__input {
+  padding-left: 36px !important;
+  padding-right: 20px !important;
+  height: 28px !important;
+  font-size: 14px !important;
+}
+
+.md-search__icon svg {
+  height: 16px !important;
+  width: 16px !important;
+}
+
+.md-search__options button {
+  height: 0 !important;
+}
+
+.md-search__options button svg {
+  height: 16px !important;
+  width: 16px !important;
+}
+
+.md-search-result__meta {
+  border: 1px solid white;
+  color: white !important;
+  background-color: black !important;
+}
+
+/* Tabs */
+.md-tabs__list {
+  padding-top: 6px !important;
+  padding-bottom: 6px !important;
+}
+
+.md-tabs__item {
+  height: 24px !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.md-tabs__item a {
+  margin-top: 0px !important;
+  font-size: 12px !important;
+}
+
+/* Change Font Family of Input Placeholder */
+input::placeholder {
+  font-family: 'Inter', sans-serif; /* Replace 'Your Chosen Font' with the desired font name */
+}
+
+/* Change nav title */
+
+.md-nav__title {
+  font-weight: var(--font-medium) !important;
+  color: var(--gray-700) !important;
+}
+
+/* Hide footer */
+footer {
+  display: none;
+}
+
+/* Remove shadow from navigation bar */
+.md-header--shadow {
+  box-shadow: none;
+}

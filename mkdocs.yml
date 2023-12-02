@@ -6,10 +6,13 @@ theme:
   palette:
     primary: black
   features:
-    - navigation.tabs
+    - content.code.annotate
     - content.code.copy
     - content.code.select
-    - content.code.annotate
+    - navigation.tabs
+    - search.highlight
+    - search.share
+    - search.suggest
 extra:
   generator: false
 extra_css:
@@ -22,3 +25,17 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+plugins:
+  - search
+  - encryptcontent:
+      global_password: !ENV [USER_GLOBAL_PASSWORD, 'Abcde!12345']
+      title_prefix: ""
+      summary: "🚧 Access Denied: No Party for You!"
+      placeholder: "Magic words..."
+      decryption_failure_message: "Who are you?"
+      encryption_info_message: "Oops! This page is restricted, and sadly, you're not allowed to be here. Unauthorized access is a big no-no 🙅"
+      encrypted_something: # additionally encrypt some html elements
+        md-header__inner: [nav, class]
+        md-tabs: [nav, class]
+        md-sidebar__scrollwrap: [div, class]
+

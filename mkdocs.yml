@@ -10,7 +10,6 @@ theme:
     - content.code.copy
     - content.code.select
     - navigation.tabs
-    - search.highlight
 extra:
   generator: false
 extra_css:
@@ -25,20 +24,3 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
-plugins:
-  - search
-  - encryptcontent:
-      # TODO: adjust default password fallbacks
-      global_password: !ENV [USER_GLOBAL_PASSWORD, "Abcde!12345"]
-      # search_index: "clear"
-      title_prefix: ""
-      summary: "🚧 Access Denied: No Party for You!"
-      placeholder: "Magic words..."
-      decryption_failure_message: "Who are you?"
-      encryption_info_message: "Oops! This page is restricted, and sadly, you're not allowed to be here. Unauthorized access is a big no-no 🙅"
-      encrypted_something:
-        md-tabs: [nav, class]
-        md-sidebar__scrollwrap: [div, class]
-        md-header__button: [label, class]
-        md-header: [header, class]
-

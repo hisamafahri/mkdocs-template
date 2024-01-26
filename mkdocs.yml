@@ -4,7 +4,8 @@ theme:
   font:
     text: Inter
   palette:
-    primary: black
+    primary: deep purple
+    accent: deep purple
   features:
     - content.code.annotate
     - content.code.copy
